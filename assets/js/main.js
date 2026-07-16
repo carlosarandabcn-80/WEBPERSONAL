@@ -9,6 +9,11 @@
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
   root.dataset.theme = storedTheme || (prefersDark ? "dark" : "light");
+  document.body.classList.add("is-loading");
+  window.setTimeout(() => {
+    document.body.classList.remove("is-loading");
+    document.querySelector("[data-intro-loader]")?.remove();
+  }, 2400);
   if (year) year.textContent = new Date().getFullYear();
 
   function closeNav() {

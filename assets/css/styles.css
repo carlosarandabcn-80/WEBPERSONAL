@@ -58,6 +58,10 @@ body.nav-open {
   overflow: hidden;
 }
 
+body.is-loading {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -141,8 +145,30 @@ input {
   width: 92%;
   aspect-ratio: 4 / 3;
   background: currentColor;
-  -webkit-mask: url("../images/carlos-logo.svg") center / contain no-repeat;
-  mask: url("../images/carlos-logo.svg") center / contain no-repeat;
+  -webkit-mask: url("../images/logo-official.png") center / contain no-repeat;
+  mask: url("../images/logo-official.png") center / contain no-repeat;
+}
+
+.intro-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 44%, rgba(0, 166, 166, 0.08), transparent 20rem),
+    var(--bg);
+  pointer-events: none;
+  animation: introExit 900ms var(--ease) 1450ms forwards;
+}
+
+.intro-loader img {
+  width: clamp(8rem, 18vw, 14rem);
+  height: auto;
+  filter: drop-shadow(0 24px 70px rgba(20, 24, 33, 0.12));
+  opacity: 0;
+  transform: translateY(10px) scale(0.94);
+  animation: logoIntro 1450ms var(--ease) forwards;
 }
 
 .brand-copy {
@@ -447,17 +473,17 @@ p {
 }
 
 .hero-media img {
-  width: min(100%, 920px);
+  width: min(100%, 700px);
   margin-inline: auto 0;
   border-radius: 0;
-  filter: drop-shadow(0 30px 58px rgba(23, 27, 36, 0.14));
-  mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 100%);
+  filter: drop-shadow(0 30px 62px rgba(23, 27, 36, 0.16));
+  mask-image: linear-gradient(180deg, #000 0%, #000 88%, transparent 100%);
 }
 
 .hero-badge {
   position: absolute;
-  right: min(5vw, 4rem);
-  bottom: 5%;
+  right: min(3vw, 2rem);
+  bottom: 10%;
   max-width: 240px;
   padding: 1rem;
   border: 1px solid var(--line);
@@ -1005,6 +1031,33 @@ p {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .intro-loader {
+    display: none;
+  }
+}
+
+@keyframes logoIntro {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.94);
+  }
+  42%,
+  72% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+}
+
+@keyframes introExit {
+  to {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
