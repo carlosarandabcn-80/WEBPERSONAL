@@ -7,7 +7,7 @@ Landing page profesional lista para publicar en GitHub Pages.
 - `index.html`: estructura completa de la web.
 - `assets/css/styles.css`: diseno responsive, modo claro/oscuro, glassmorphism y microinteracciones.
 - `assets/js/main.js`: navegacion mobile, animaciones on-scroll, filtros de portfolio, asistente demostrativo y canvas dinamico.
-- `assets/images/carlos-profile-cutout.webp`: retrato recortado con calado para portada.
+- `assets/images/carlos-window-hero-cutout.webp`: silueta recortada con calado para portada.
 - `assets/images/carlos-lounge-bw.webp`: retrato secundario ambiental en escala de grises.
 - `assets/images/carlos-window-bw.webp`: retrato secundario minimal en escala de grises.
 - `assets/images/logo-official.png`: logotipo oficial definitivo.
