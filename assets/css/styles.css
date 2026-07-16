@@ -393,32 +393,25 @@ p {
   font-weight: 900;
 }
 
-.hero-metrics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.8rem;
-  margin: 1.4rem 0 0;
+.hero-signals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.35rem 0 0;
 }
 
-.hero-metrics div {
-  min-height: 78px;
-  padding: 0.8rem;
+.hero-signals span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0.5rem 0.75rem;
   border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--surface);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
   backdrop-filter: blur(18px);
-}
-
-.hero-metrics dt {
-  font-size: 1.5rem;
-  font-weight: 950;
-}
-
-.hero-metrics dd {
-  margin: 0.25rem 0 0;
-  color: var(--muted);
-  font-size: 0.82rem;
-  line-height: 1.35;
+  color: color-mix(in srgb, var(--text) 78%, var(--muted));
+  font-size: 0.84rem;
+  font-weight: 850;
 }
 
 .hero-media {
@@ -501,37 +494,73 @@ p {
   padding-top: 0.6rem;
 }
 
-.about-portrait {
+.about-visual-lab {
   position: relative;
   margin: 2rem 0 0;
+}
+
+.portrait-stage {
+  position: relative;
+  min-height: clamp(280px, 38vw, 430px);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
-  background: var(--surface);
+  background:
+    radial-gradient(circle at 16% 84%, color-mix(in srgb, var(--accent-2) 16%, transparent), transparent 15rem),
+    var(--surface);
   box-shadow: 0 18px 58px rgba(20, 24, 33, 0.12);
 }
 
-.about-portrait img {
+.portrait-panel {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 420ms var(--ease), transform 520ms var(--ease);
+}
+
+.portrait-panel.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.portrait-panel img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 100%;
   object-fit: cover;
   object-position: center 40%;
 }
 
-.about-portrait figcaption {
+.visual-switch {
   position: absolute;
-  left: 1rem;
-  right: 1rem;
+  left: 50%;
   bottom: 1rem;
-  max-width: 360px;
-  padding: 0.8rem 0.9rem;
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.35rem;
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 999px;
   background: color-mix(in srgb, var(--surface-strong) 76%, transparent);
   backdrop-filter: blur(16px);
+  box-shadow: 0 14px 44px rgba(20, 24, 33, 0.14);
+  transform: translateX(-50%);
+}
+
+.visual-switch button {
+  min-height: 34px;
+  padding: 0.45rem 0.75rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
   color: var(--text);
-  font-weight: 850;
-  line-height: 1.35;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.visual-switch button.is-active {
+  background: var(--text);
+  color: var(--bg);
 }
 
 .pill-row {
@@ -587,6 +616,11 @@ p {
   backdrop-filter: blur(18px);
   box-shadow: 0 12px 42px rgba(20, 24, 33, 0.07);
   overflow: hidden;
+  transform: perspective(900px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transition:
+    transform 220ms var(--ease),
+    box-shadow 220ms var(--ease),
+    border-color 220ms var(--ease);
 }
 
 .service-card::after,
@@ -602,11 +636,12 @@ p {
   background: color-mix(in srgb, var(--accent-2) 18%, transparent);
 }
 
-.card-number {
-  display: inline-block;
-  margin-bottom: 2.4rem;
-  color: var(--accent);
-  font-weight: 950;
+.service-card:hover,
+.project-card:hover,
+.education-grid article:hover,
+.insight-strip article:hover {
+  border-color: color-mix(in srgb, var(--accent-2) 34%, var(--line));
+  box-shadow: 0 22px 60px rgba(20, 24, 33, 0.12);
 }
 
 .filter-bar {
@@ -635,7 +670,11 @@ p {
   flex-direction: column;
   justify-content: flex-end;
   isolation: isolate;
-  transition: transform 240ms var(--ease), opacity 240ms var(--ease);
+  transition:
+    transform 240ms var(--ease),
+    opacity 240ms var(--ease),
+    box-shadow 220ms var(--ease),
+    border-color 220ms var(--ease);
 }
 
 .project-card.is-hidden {
@@ -643,7 +682,7 @@ p {
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
+  transform: perspective(900px) translateY(-5px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
 }
 
 .project-card > span {
@@ -1020,7 +1059,7 @@ p {
     font-size: clamp(2rem, 10vw, 3rem);
   }
 
-  .hero-metrics,
+  .hero-signals,
   .service-grid,
   .project-grid,
   .education-grid,

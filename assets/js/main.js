@@ -60,9 +60,40 @@
         item.classList.toggle("is-active", active);
         item.setAttribute("aria-selected", String(active));
       });
-      projectCards.forEach((card) => {
+  projectCards.forEach((card) => {
         card.classList.toggle("is-hidden", filter !== "all" && card.dataset.category !== filter);
       });
+    });
+  });
+
+  const portraitTriggers = [...document.querySelectorAll("[data-portrait-trigger]")];
+  const portraitPanels = [...document.querySelectorAll("[data-portrait-panel]")];
+
+  portraitTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const target = trigger.dataset.portraitTrigger;
+      portraitTriggers.forEach((item) => {
+        const active = item === trigger;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-selected", String(active));
+      });
+      portraitPanels.forEach((panel) => {
+        panel.classList.toggle("is-active", panel.dataset.portraitPanel === target);
+      });
+    });
+  });
+
+  document.querySelectorAll(".service-card, .project-card, .education-grid article, .insight-strip article").forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      const rect = card.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      card.style.setProperty("--tilt-x", `${(-y * 4).toFixed(2)}deg`);
+      card.style.setProperty("--tilt-y", `${(x * 4).toFixed(2)}deg`);
+    });
+    card.addEventListener("pointerleave", () => {
+      card.style.removeProperty("--tilt-x");
+      card.style.removeProperty("--tilt-y");
     });
   });
 

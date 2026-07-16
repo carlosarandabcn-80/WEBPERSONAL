@@ -68,20 +68,11 @@
             <a class="button button-primary" href="#portfolio">Ver proyectos</a>
             <a class="button button-secondary" href="mailto:carlosarandabcn@gmail.com">Trabaja conmigo</a>
           </div>
-          <dl class="hero-metrics" aria-label="Resumen profesional">
-            <div>
-              <dt>15+</dt>
-              <dd>anos en produccion grafica</dd>
-            </div>
-            <div>
-              <dt>6+</dt>
-              <dd>anos dinamizando danza y grupos</dd>
-            </div>
-            <div>
-              <dt>3</dt>
-              <dd>idiomas de trabajo</dd>
-            </div>
-          </dl>
+          <div class="hero-signals" aria-label="Resumen profesional">
+            <span>Accion social</span>
+            <span>Diseno claro</span>
+            <span>Formacion</span>
+          </div>
         </div>
 
         <div class="hero-media" data-reveal>
@@ -129,17 +120,34 @@
               <span>Diseno grafico</span>
               <span>Dinamizacion de grupos</span>
             </div>
-            <figure class="about-portrait">
-              <picture>
-                <source srcset="assets/images/carlos-studio-portrait.webp" type="image/webp" />
-                <img
-                  src="assets/images/carlos-studio-portrait.png"
-                  alt="Retrato de estudio de Carlos Aranda Sanchez en escala de grises"
-                  loading="lazy"
-                />
-              </picture>
-              <figcaption>Una marca personal sobria, directa y centrada en la confianza.</figcaption>
-            </figure>
+            <div class="about-visual-lab" data-portrait-lab>
+              <div class="portrait-stage" aria-live="polite">
+                <picture class="portrait-panel is-active" data-portrait-panel="lounge">
+                  <source srcset="assets/images/carlos-lounge-bw.webp" type="image/webp" />
+                  <img
+                    src="assets/images/carlos-lounge-bw.png"
+                    alt="Retrato profesional de Carlos Aranda Sanchez en interior, escala de grises"
+                    loading="lazy"
+                  />
+                </picture>
+                <picture class="portrait-panel" data-portrait-panel="window">
+                  <source srcset="assets/images/carlos-window-bw.webp" type="image/webp" />
+                  <img
+                    src="assets/images/carlos-window-bw.png"
+                    alt="Retrato profesional de Carlos Aranda Sanchez junto a una ventana, escala de grises"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="visual-switch" role="tablist" aria-label="Cambiar retrato">
+                <button class="is-active" type="button" data-portrait-trigger="lounge" role="tab" aria-selected="true">
+                  Contexto
+                </button>
+                <button type="button" data-portrait-trigger="window" role="tab" aria-selected="false">
+                  Claridad
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -151,7 +159,6 @@
         </div>
         <div class="service-grid">
           <article class="service-card" data-reveal>
-            <span class="card-number">01</span>
             <h3>Integracion y educacion social</h3>
             <p>
               Apoyo en contextos donde importan el bienestar, la inclusion, la escucha activa y el
@@ -159,7 +166,6 @@
             </p>
           </article>
           <article class="service-card" data-reveal>
-            <span class="card-number">02</span>
             <h3>Comunicacion y produccion grafica</h3>
             <p>
               Experiencia en tratamiento de informacion, produccion grafica y diseno para convertir
@@ -167,7 +173,6 @@
             </p>
           </article>
           <article class="service-card" data-reveal>
-            <span class="card-number">03</span>
             <h3>Formacion y experiencia de cliente</h3>
             <p>
               Diseno de dinamicas, soporte postventa y acompanamiento de equipos o usuarios con
@@ -175,7 +180,6 @@
             </p>
           </article>
           <article class="service-card" data-reveal>
-            <span class="card-number">04</span>
             <h3>Dinamizacion corporal y grupos</h3>
             <p>
               Clases, baile social y gestion de grupos para activar participacion, confianza y
@@ -207,7 +211,7 @@
             <span>Produccion grafica</span>
             <h3>Sistemas visuales que reducen friccion</h3>
             <p>
-              Mas de 15 anos en CTI Soluciones trabajando con tratamiento de informacion,
+              Trayectoria solida en CTI Soluciones trabajando con tratamiento de informacion,
               produccion grafica y precision operativa.
             </p>
           </article>
