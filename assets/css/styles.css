@@ -473,11 +473,14 @@ p {
 }
 
 .hero-media img {
-  width: min(100%, 700px);
+  width: auto;
+  height: clamp(34rem, 76svh, 48rem);
+  max-width: min(100%, 36rem);
   margin-inline: auto 0;
   border-radius: 0;
   filter: drop-shadow(0 30px 62px rgba(23, 27, 36, 0.16));
-  mask-image: linear-gradient(180deg, #000 0%, #000 88%, transparent 100%);
+  object-fit: contain;
+  mask-image: linear-gradient(180deg, #000 0%, #000 86%, transparent 100%);
 }
 
 .hero-badge {
@@ -1108,8 +1111,10 @@ p {
   }
 
   .hero-media img {
-    width: min(100%, 760px);
-    mask-image: linear-gradient(180deg, #000 70%, transparent 100%);
+    width: auto;
+    height: clamp(28rem, 62svh, 40rem);
+    max-width: min(100%, 30rem);
+    mask-image: linear-gradient(180deg, #000 72%, transparent 100%);
   }
 
   .hero-social {
@@ -1149,6 +1154,15 @@ p {
     overflow: hidden;
   }
 
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-lead {
+    max-width: 21rem;
+  }
+
   h1 {
     max-width: 100%;
     font-size: clamp(3rem, 15vw, 4.4rem);
@@ -1172,18 +1186,19 @@ p {
 
   .hero .hero-media {
     position: absolute;
-    top: 6.2rem;
-    right: -7.4rem;
-    width: 30rem;
+    top: 5.6rem;
+    right: -6.2rem;
+    width: 23rem;
     z-index: 1;
-    opacity: 0.26;
+    opacity: 0.2;
     pointer-events: none;
   }
 
   .hero-media img {
+    height: auto;
     width: 100%;
     filter: none;
-    mask-image: linear-gradient(90deg, transparent 0%, #000 22%, #000 72%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 86%);
   }
 
   .hero-badge {
