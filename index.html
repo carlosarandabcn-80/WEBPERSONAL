@@ -25,7 +25,7 @@
 
     <header class="site-header" data-header>
       <a class="brand" href="#home" aria-label="Inicio">
-        <span class="brand-mark">CA</span>
+        <span class="brand-mark" aria-hidden="true"><span class="logo-mask"></span></span>
         <span class="brand-copy">
           <strong>Carlos Aranda</strong>
           <small>Barcelona</small>
@@ -57,6 +57,7 @@
         <div class="hero-canvas" aria-hidden="true">
           <canvas id="signalCanvas"></canvas>
         </div>
+        <div class="brand-watermark" aria-hidden="true"><span class="logo-mask"></span></div>
         <div class="hero-copy" data-reveal>
           <p class="eyebrow"><span></span> Integracion social + diseno + experiencia</p>
           <h1 id="hero-title"><span>Carlos Aranda</span><span>Sanchez</span></h1>
@@ -466,6 +467,11 @@
     </main>
 
     <footer class="site-footer">
+      <div class="footer-brand" aria-label="Variantes de marca">
+        <span class="footer-logo logo-neutral"><span class="logo-mask"></span></span>
+        <span class="footer-logo logo-accent"><span class="logo-mask"></span></span>
+        <span class="footer-logo logo-teal"><span class="logo-mask"></span></span>
+      </div>
       <p>© <span data-year></span> Carlos Aranda Sanchez. Barcelona, Cataluna, Espana.</p>
       <p>Catalan nativo/bilingue · Espanol nativo/bilingue · Ingles profesional</p>
     </footer>

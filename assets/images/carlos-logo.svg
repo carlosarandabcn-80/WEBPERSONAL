@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Carlos Aranda logo">
+  <g fill="none" stroke="#111827" stroke-width="17" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34 166c-12-58 8-103 58-133 52-31 123-28 170 8 39 30 55 75 38 121" />
+    <path d="M101 206c52 22 126 20 177-6" />
+    <path d="M79 110c20 15 38 13 48-4 7-12 1-21-14-18-20 3-39 23-44 37 27-1 55-22 72-46" />
+    <path d="M139 80l46 50 42-42c14-14 37-15 56-2" />
+    <path d="M227 88c-1 27 14 46 41 57" />
+    <path d="M58 88l35 20" />
+    <path d="M52 110l32 12" />
+  </g>
+</svg>

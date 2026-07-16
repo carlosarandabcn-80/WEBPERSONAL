@@ -11,6 +11,7 @@ Landing page profesional lista para publicar en GitHub Pages.
 - `assets/images/carlos-cover-hero.png`: fallback PNG de la portada.
 - `assets/images/carlos-lounge-bw.webp`: retrato secundario ambiental en escala de grises.
 - `assets/images/carlos-window-bw.webp`: retrato secundario minimal en escala de grises.
+- `assets/images/carlos-logo.svg`: logotipo vectorial de marca con trazo solido.
 - `assets/images/favicon.svg`: favicon de marca.
 
 ## Publicacion en GitHub Pages
