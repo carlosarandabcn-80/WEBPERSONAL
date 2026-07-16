@@ -1,11 +1,11 @@
 # Carlos Aranda Sanchez - Portfolio Web
 
-Landing page profesional lista para publicar en GitHub Pages.
+Landing page profesional en escala de grises, preparada para publicar en GitHub Pages.
 
 ## Que incluye
 
 - `index.html`: estructura completa de la web.
-- `assets/css/styles.css`: diseno responsive, modo claro/oscuro, glassmorphism y microinteracciones.
+- `assets/css/styles.css`: diseno responsive, paleta monocroma, glassmorphism y microinteracciones.
 - `assets/js/main.js`: navegacion mobile, animaciones on-scroll, filtros de portfolio, asistente demostrativo y canvas dinamico.
 - `assets/images/carlos-window-hero-cutout.webp`: silueta recortada con calado para portada.
 - `assets/images/carlos-lounge-bw.webp`: retrato secundario ambiental en escala de grises.
@@ -26,9 +26,9 @@ La web se ha construido a partir del perfil facilitado:
 
 - Carlos Aranda Sanchez, Barcelona.
 - Contacto: `carlosarandabcn@gmail.com`, `680 223 287`, LinkedIn `/in/carlosarandabcn`.
-- Aptitudes: integracion social, formacion de empleados y soporte postventa.
+- Aptitudes: integracion social, educacion social, dinamizacion de grupos, salsa cubana, guitarra y percusion.
 - Idiomas: catalan, espanol e ingles profesional.
-- Experiencia destacada: CTI Soluciones, instructor de danza, atencion al cliente, diseno grafico, formacion y produccion.
+- Experiencia destacada: integracion social, educacion social, profesor de salsa cubana, musica, atencion al cliente, formacion y produccion.
 - Formacion: Educacion Social, Integracion Social, Diseno Grafico y Humanidades.
 
 ## Stack propuesto
@@ -47,4 +47,4 @@ Esta entrega es estatica para facilitar GitHub Pages. Si se quiere evolucionar a
 - Meta title, description, Open Graph y favicon.
 - Navegacion por anclas y `skip link`.
 - Respeto a `prefers-reduced-motion`.
-- Contraste adaptado para modo claro y oscuro.
+- Contraste adaptado a una interfaz monocroma.

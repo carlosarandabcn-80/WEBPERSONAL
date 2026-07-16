@@ -1,16 +1,16 @@
 :root {
-  color-scheme: light;
-  --bg: #f4f7fb;
-  --bg-soft: #e8edf5;
-  --surface: rgba(255, 255, 255, 0.72);
-  --surface-strong: #ffffff;
-  --text: #141821;
-  --muted: #657083;
-  --line: rgba(20, 24, 33, 0.12);
-  --accent: #ff2d55;
-  --accent-2: #00a6a6;
-  --accent-3: #f5b841;
-  --shadow: 0 24px 80px rgba(34, 47, 62, 0.14);
+  color-scheme: dark;
+  --bg: #111111;
+  --bg-soft: #181818;
+  --surface: rgba(255, 255, 255, 0.07);
+  --surface-strong: #202020;
+  --text: #f4f4f4;
+  --muted: #b8b8b8;
+  --line: rgba(255, 255, 255, 0.14);
+  --accent: #ffffff;
+  --accent-2: #9a9a9a;
+  --accent-3: #d6d6d6;
+  --shadow: 0 24px 90px rgba(0, 0, 0, 0.36);
   --radius: 8px;
   --header-height: 78px;
   --max: 1180px;
@@ -21,17 +21,17 @@
 
 [data-theme="dark"] {
   color-scheme: dark;
-  --bg: #0f1218;
-  --bg-soft: #171b24;
-  --surface: rgba(23, 27, 36, 0.72);
-  --surface-strong: #171b24;
-  --text: #f6f7fb;
-  --muted: #a9b1c0;
-  --line: rgba(246, 247, 251, 0.14);
-  --accent: #ff3d63;
-  --accent-2: #38d2c2;
-  --accent-3: #ffd166;
-  --shadow: 0 24px 90px rgba(0, 0, 0, 0.34);
+  --bg: #111111;
+  --bg-soft: #181818;
+  --surface: rgba(255, 255, 255, 0.07);
+  --surface-strong: #202020;
+  --text: #f4f4f4;
+  --muted: #b8b8b8;
+  --line: rgba(255, 255, 255, 0.14);
+  --accent: #ffffff;
+  --accent-2: #9a9a9a;
+  --accent-3: #d6d6d6;
+  --shadow: 0 24px 90px rgba(0, 0, 0, 0.36);
 }
 
 * {
@@ -46,8 +46,8 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 10% 10%, rgba(0, 166, 166, 0.12), transparent 26rem),
-    radial-gradient(circle at 88% 22%, rgba(255, 45, 85, 0.12), transparent 28rem),
+    radial-gradient(circle at 8% 10%, rgba(255, 255, 255, 0.07), transparent 25rem),
+    radial-gradient(circle at 88% 22%, rgba(255, 255, 255, 0.055), transparent 28rem),
     linear-gradient(135deg, var(--bg), var(--bg-soft));
   color: var(--text);
   min-height: 100vh;
@@ -133,7 +133,7 @@ input {
   width: 58px;
   height: 44px;
   place-items: center;
-  color: var(--text);
+  color: #ffffff;
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -156,7 +156,7 @@ input {
   display: grid;
   place-items: center;
   background:
-    radial-gradient(circle at 50% 44%, rgba(0, 166, 166, 0.08), transparent 20rem),
+    radial-gradient(circle at 50% 44%, rgba(255, 255, 255, 0.08), transparent 20rem),
     var(--bg);
   pointer-events: none;
   animation: introExit 900ms var(--ease) 1450ms forwards;
@@ -165,7 +165,7 @@ input {
 .intro-loader img {
   width: clamp(8rem, 18vw, 14rem);
   height: auto;
-  filter: drop-shadow(0 24px 70px rgba(20, 24, 33, 0.12));
+  filter: invert(1) drop-shadow(0 24px 70px rgba(255, 255, 255, 0.08));
   opacity: 0;
   transform: translateY(10px) scale(0.94);
   animation: logoIntro 1450ms var(--ease) forwards;
@@ -244,8 +244,8 @@ input {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 8px -4px 0 var(--text);
+  background: var(--text);
+  box-shadow: 8px -4px 0 var(--bg);
 }
 
 .nav-toggle {
@@ -284,7 +284,7 @@ input {
   min-height: 88svh;
   padding: calc(var(--header-height) + 1rem) clamp(1rem, 5vw, 4rem) 1.2rem;
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
   align-items: center;
   gap: clamp(2rem, 6vw, 5rem);
 }
@@ -296,7 +296,7 @@ input {
   width: 22rem;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: color-mix(in srgb, var(--accent-2) 18%, transparent);
+  background: color-mix(in srgb, #ffffff 8%, transparent);
   filter: blur(12px);
   opacity: 0.7;
   pointer-events: none;
@@ -323,18 +323,19 @@ input {
 
 .hero-identity {
   display: grid;
-  justify-items: start;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(0.95rem, 2vw, 1.4rem);
+  margin-bottom: 1.15rem;
 }
 
 .hero-logo {
   display: grid;
   place-items: center;
-  width: clamp(6rem, 9vw, 8.2rem);
+  width: clamp(5.5rem, 7.6vw, 7.4rem);
   margin-top: 0;
-  color: var(--text);
-  opacity: 0.96;
+  color: #ffffff;
+  opacity: 1;
 }
 
 .hero-logo .logo-mask {
@@ -369,7 +370,7 @@ p {
 h1 {
   max-width: 920px;
   margin-bottom: 0;
-  font-size: clamp(3.8rem, 8vw, 6.9rem);
+  font-size: clamp(3.5rem, 6.9vw, 6.1rem);
   line-height: 0.9;
   letter-spacing: 0;
 }
@@ -377,6 +378,10 @@ h1 {
 h1 span {
   display: block;
   white-space: nowrap;
+}
+
+.title-mobile {
+  display: none;
 }
 
 h2 {
@@ -431,9 +436,9 @@ p {
 
 .button-primary {
   background: var(--accent);
-  color: #fff;
+  color: var(--bg);
   border-color: transparent;
-  box-shadow: 0 18px 42px rgba(255, 45, 85, 0.32);
+  box-shadow: 0 18px 42px rgba(255, 255, 255, 0.12);
 }
 
 .button-secondary {
@@ -506,7 +511,7 @@ p {
 }
 
 .hero-social a:hover {
-  color: var(--accent);
+  color: var(--text);
   transform: translateY(-3px);
 }
 
@@ -539,9 +544,9 @@ p {
   border-radius: var(--radius);
   overflow: hidden;
   background:
-    radial-gradient(circle at 16% 84%, color-mix(in srgb, var(--accent-2) 16%, transparent), transparent 15rem),
+    radial-gradient(circle at 16% 84%, color-mix(in srgb, #ffffff 8%, transparent), transparent 15rem),
     var(--surface);
-  box-shadow: 0 18px 48px rgba(20, 24, 33, 0.1);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.24);
 }
 
 .portrait-panel {
@@ -575,7 +580,7 @@ p {
   border-radius: 999px;
   background: color-mix(in srgb, var(--surface-strong) 76%, transparent);
   backdrop-filter: blur(16px);
-  box-shadow: 0 14px 44px rgba(20, 24, 33, 0.14);
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.28);
   transform: translateX(-50%);
 }
 
@@ -647,7 +652,7 @@ p {
   border-radius: var(--radius);
   background: var(--surface);
   backdrop-filter: blur(18px);
-  box-shadow: 0 12px 42px rgba(20, 24, 33, 0.07);
+  box-shadow: 0 12px 42px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transform: perspective(900px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
   transition:
@@ -666,15 +671,15 @@ p {
   right: -28px;
   bottom: -28px;
   border-radius: 50%;
-  background: color-mix(in srgb, var(--accent-2) 18%, transparent);
+  background: color-mix(in srgb, #ffffff 9%, transparent);
 }
 
 .service-card:hover,
 .project-card:hover,
 .education-grid article:hover,
 .insight-strip article:hover {
-  border-color: color-mix(in srgb, var(--accent-2) 34%, var(--line));
-  box-shadow: 0 22px 60px rgba(20, 24, 33, 0.12);
+  border-color: color-mix(in srgb, #ffffff 34%, var(--line));
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
 }
 
 .filter-bar {
@@ -754,7 +759,7 @@ p {
   height: 9px;
   right: 16px;
   bottom: 20px;
-  background: var(--accent-2);
+  background: var(--accent-3);
 }
 
 .timeline {
@@ -935,7 +940,7 @@ p {
   border-radius: var(--radius);
   padding: 0.9rem 1rem;
   background: var(--accent);
-  color: #fff;
+  color: var(--bg);
   font-weight: 900;
 }
 
@@ -976,20 +981,12 @@ p {
   width: 42px;
   height: 32px;
   place-items: center;
-  color: var(--text);
-  opacity: 0.9;
+  color: #ffffff;
+  opacity: 1;
 }
 
 .footer-logo .logo-mask {
   width: 100%;
-}
-
-.logo-accent {
-  color: var(--accent);
-}
-
-.logo-teal {
-  color: var(--accent-2);
 }
 
 [data-reveal] {
@@ -1143,13 +1140,14 @@ p {
 
   .hero-identity {
     display: grid;
+    grid-template-columns: 1fr;
     justify-items: start;
     gap: 0.65rem;
     margin-bottom: 1rem;
   }
 
   .hero-logo {
-    width: clamp(5.4rem, 23vw, 7rem);
+    width: clamp(5rem, 21vw, 6.4rem);
     margin-top: 0;
   }
 
@@ -1158,12 +1156,28 @@ p {
   }
 
   h1 {
+    width: 100%;
     max-width: 100%;
-    font-size: clamp(3rem, 15vw, 4.4rem);
+    font-size: clamp(2.8rem, 14vw, 4.2rem);
   }
 
   h1 span {
     white-space: normal;
+  }
+
+  .title-desktop {
+    display: none;
+  }
+
+  .title-mobile {
+    display: block;
+  }
+
+  .eyebrow,
+  .section-kicker {
+    max-width: 100%;
+    flex-wrap: wrap;
+    line-height: 1.35;
   }
 
   h2 {
@@ -1176,6 +1190,16 @@ p {
   .education-grid,
   .insight-strip {
     grid-template-columns: 1fr;
+  }
+
+  .hero-signals {
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  .hero-signals span {
+    font-size: 0.78rem;
+    padding-inline: 0.7rem;
   }
 
   .hero .hero-media {

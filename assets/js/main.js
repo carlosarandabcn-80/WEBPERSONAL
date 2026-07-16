@@ -107,14 +107,20 @@
   const assistantInput = document.querySelector("#assistant-input");
   const answers = {
     perfil:
-      "Carlos combina integracion y educacion social con una trayectoria amplia en diseno grafico, produccion, formacion, danza y atencion al cliente.",
+      "Carlos es integrador social, estudiante de ultimo ano de Educacion Social, profesor de salsa cubana y musico de guitarra y percusion.",
     servicios:
-      "Puede aportar valor en proyectos de integracion social, formacion, comunicacion visual, dinamizacion de grupos y experiencia de cliente.",
+      "Puede aportar en acompanamiento socioeducativo, dinamizacion de grupos, clases de salsa cubana y propuestas culturales con musica.",
+    integracion:
+      "En integracion social, Carlos trabaja desde la escucha, la observacion y el cuidado del vinculo con personas y grupos.",
+    educacion:
+      "Esta en el ultimo ano de Educacion Social y orienta su perfil hacia intervencion socioeducativa, participacion y acompanamiento.",
     contacto:
       "Puedes contactar con Carlos en carlosarandabcn@gmail.com, por telefono en el 680 223 287 o via LinkedIn: /in/carlosarandabcn.",
     idiomas: "Idiomas: catalan nativo/bilingue, espanol nativo/bilingue e ingles profesional.",
-    danza: "Como instructor de danza, dinamizo clases y baile social, con experiencia en gestion de grupos.",
-    diseno: "Su base visual viene del CFGS de Diseno Grafico y de mas de 15 anos en tratamiento de informacion y produccion grafica.",
+    salsa: "Como profesor de salsa cubana, dinamiza clases y baile social, cuidando el ritmo, el grupo y la confianza.",
+    musica: "Como musico, utiliza guitarra y percusion como recursos para crear clima, participacion y expresion.",
+    guitarra: "La guitarra forma parte de su practica musical y puede integrarse en propuestas culturales o grupales.",
+    percusion: "La percusion aporta ritmo, presencia y una forma sencilla de activar la participacion.",
   };
 
   function respond(question) {
@@ -181,7 +187,7 @@
       const y = cy + Math.sin(angle * 0.78) * point.radius * 0.42;
       context.beginPath();
       context.arc(x, y, point.size, 0, Math.PI * 2);
-      context.fillStyle = index % 5 === 0 ? "rgba(255,45,85,0.32)" : "rgba(0,166,166,0.18)";
+      context.fillStyle = index % 5 === 0 ? "rgba(255,255,255,0.28)" : "rgba(180,180,180,0.16)";
       context.fill();
 
       if (index > 0 && index % 3 === 0) {
@@ -192,7 +198,7 @@
         context.beginPath();
         context.moveTo(px, py);
         context.lineTo(x, y);
-        context.strokeStyle = "rgba(101,112,131,0.12)";
+        context.strokeStyle = "rgba(210,210,210,0.12)";
         context.stroke();
       }
     });
