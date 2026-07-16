@@ -7,8 +7,9 @@ Landing page profesional lista para publicar en GitHub Pages.
 - `index.html`: estructura completa de la web.
 - `assets/css/styles.css`: diseno responsive, modo claro/oscuro, glassmorphism y microinteracciones.
 - `assets/js/main.js`: navegacion mobile, animaciones on-scroll, filtros de portfolio, asistente demostrativo y canvas dinamico.
-- `assets/images/carlos-avatar-hero.webp`: avatar editorial optimizado como visual protagonista.
-- `assets/images/carlos-avatar-hero.png`: fallback PNG del avatar.
+- `assets/images/carlos-cover-hero.webp`: portada editorial optimizada en escala de grises.
+- `assets/images/carlos-cover-hero.png`: fallback PNG de la portada.
+- `assets/images/carlos-studio-portrait.webp`: retrato secundario de apoyo visual.
 - `assets/images/favicon.svg`: favicon de marca.
 
 ## Publicacion en GitHub Pages
