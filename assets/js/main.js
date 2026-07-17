@@ -54,23 +54,6 @@
 
   document.querySelectorAll("[data-reveal]").forEach((element) => revealObserver.observe(element));
 
-  const filterButtons = [...document.querySelectorAll("[data-filter]")];
-  const projectCards = [...document.querySelectorAll("[data-category]")];
-
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const filter = button.dataset.filter;
-      filterButtons.forEach((item) => {
-        const active = item === button;
-        item.classList.toggle("is-active", active);
-        item.setAttribute("aria-selected", String(active));
-      });
-  projectCards.forEach((card) => {
-        card.classList.toggle("is-hidden", filter !== "all" && card.dataset.category !== filter);
-      });
-    });
-  });
-
   const portraitTriggers = [...document.querySelectorAll("[data-portrait-trigger]")];
   const portraitPanels = [...document.querySelectorAll("[data-portrait-panel]")];
 
