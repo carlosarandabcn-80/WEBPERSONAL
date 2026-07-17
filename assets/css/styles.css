@@ -326,7 +326,6 @@ input {
   margin-bottom: 1.15rem;
 }
 
-.eyebrow,
 .section-kicker {
   display: inline-flex;
   align-items: center;
@@ -336,12 +335,6 @@ input {
   font-size: 0.78rem;
   font-weight: 900;
   text-transform: uppercase;
-}
-
-.eyebrow span {
-  width: 42px;
-  height: 2px;
-  background: var(--accent);
 }
 
 h1,
@@ -392,7 +385,6 @@ p {
   color: color-mix(in srgb, var(--text) 82%, var(--muted));
 }
 
-.hero-actions,
 .contact-actions {
   display: flex;
   flex-wrap: wrap;
@@ -439,17 +431,13 @@ p {
   position: relative;
   z-index: 2;
   min-width: 0;
-  opacity: 0.58;
-}
-
-.hero-media picture {
-  display: block;
+  opacity: 0.78;
 }
 
 .hero-media img {
   width: auto;
-  height: clamp(40rem, 84svh, 55rem);
-  max-width: min(100%, 52rem);
+  height: clamp(42rem, 88svh, 58rem);
+  max-width: min(100%, 54rem);
   margin-inline: auto 0;
   border-radius: 0;
   filter: none;
@@ -1009,18 +997,30 @@ p {
 
   .hero {
     grid-template-columns: 1fr;
+    min-height: 82svh;
     padding-bottom: 3rem;
+    overflow: hidden;
   }
 
   .hero-copy {
     padding-top: 2rem;
   }
 
+  .hero .hero-media {
+    position: absolute;
+    top: calc(var(--header-height) + 0.8rem);
+    right: -5.5rem;
+    width: min(58vw, 34rem);
+    z-index: 1;
+    opacity: 0.52;
+    pointer-events: none;
+  }
+
   .hero-media img {
-    width: auto;
-    height: clamp(34rem, 66svh, 45rem);
-    max-width: min(100%, 42rem);
-    mask-image: linear-gradient(180deg, #000 72%, transparent 100%);
+    width: 100%;
+    height: auto;
+    max-width: none;
+    mask-image: linear-gradient(180deg, #000 0%, #000 66%, transparent 94%);
   }
 
   .hero-social {
@@ -1091,7 +1091,6 @@ p {
     display: block;
   }
 
-  .eyebrow,
   .section-kicker {
     max-width: 100%;
     flex-wrap: wrap;
@@ -1110,13 +1109,10 @@ p {
   }
 
   .hero .hero-media {
-    position: absolute;
     top: 5.4rem;
-    right: -7rem;
-    width: 29rem;
-    z-index: 1;
-    opacity: 0.34;
-    pointer-events: none;
+    right: -8rem;
+    width: 32rem;
+    opacity: 0.48;
   }
 
   .hero-media img {
