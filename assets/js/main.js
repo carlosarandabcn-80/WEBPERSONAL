@@ -7,6 +7,12 @@
   const year = document.querySelector("[data-year]");
   const storedTheme = localStorage.getItem("theme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const brand = document.querySelector(".brand");
+  const brandMark = brand?.querySelector(".brand-mark");
+
+  brand?.querySelector(".brand-copy")?.remove();
+  brandMark?.style.setProperty("width", "60px");
+  brandMark?.style.setProperty("height", "46px");
 
   root.dataset.theme = storedTheme || (prefersDark ? "dark" : "light");
   document.body.classList.add("is-loading");
