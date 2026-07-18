@@ -19,8 +19,7 @@
     }
 
     if (heroTitle) {
-      heroTitle.innerHTML =
-        '<span class="hero-prefix">Soy</span><span class="hero-name">Carlos</span><span class="hero-name">Aranda</span>';
+      heroTitle.textContent = "Soy Carlos Aranda";
     }
 
     if (hero && heroMedia && !hero.querySelector("[data-hero-rail]")) {
