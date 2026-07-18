@@ -4,6 +4,38 @@
   const navPanel = document.querySelector("[data-nav-panel]");
   const year = document.querySelector("[data-year]");
   const introLoader = document.querySelector("[data-intro-loader]");
+
+  function refineHero() {
+    const hero = document.querySelector(".hero");
+    const heroTitle = document.querySelector("#hero-title");
+    const heroMedia = document.querySelector(".hero-media");
+    const heroImage = heroMedia?.querySelector("img");
+
+    hero?.setAttribute("data-hero", "");
+
+    if (heroTitle) {
+      heroTitle.innerHTML =
+        '<span class="hero-prefix">soy</span> <span class="accent-text">CARLOS</span> ARANDA.';
+    }
+
+    if (hero && heroMedia && !hero.querySelector("[data-hero-rail]")) {
+      const rail = document.createElement("span");
+      rail.className = "hero-rail";
+      rail.setAttribute("data-hero-rail", "");
+      rail.setAttribute("aria-hidden", "true");
+      hero.insertBefore(rail, heroMedia);
+    }
+
+    if (heroImage) {
+      heroImage.src = "assets/images/carlos-window-hero-cutout.webp";
+      heroImage.width = 1117;
+      heroImage.height = 1020;
+      heroImage.alt = "Retrato recortado en blanco y negro de Carlos Aranda Sánchez";
+    }
+  }
+
+  refineHero();
+
   const hero = document.querySelector("[data-hero]");
   const heroRail = document.querySelector("[data-hero-rail]");
 
