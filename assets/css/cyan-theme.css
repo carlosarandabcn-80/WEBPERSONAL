@@ -11,6 +11,10 @@
   border-bottom-color: rgba(0, 111, 143, 0.1);
 }
 
+.nav-panel {
+  gap: clamp(0.58rem, 1.55vw, 1.28rem);
+}
+
 .hero {
   grid-template-columns: minmax(0, 0.94fr) minmax(300px, 0.78fr);
 }
@@ -81,6 +85,11 @@
 
 .salsa-copy {
   max-width: 650px;
+}
+
+.video-block {
+  display: grid;
+  gap: 0.75rem;
 }
 
 .video-reserve {
