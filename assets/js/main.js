@@ -4,6 +4,8 @@
   const navPanel = document.querySelector("[data-nav-panel]");
   const year = document.querySelector("[data-year]");
   const introLoader = document.querySelector("[data-intro-loader]");
+  const hero = document.querySelector("[data-hero]");
+  const heroRail = document.querySelector("[data-hero-rail]");
 
   document.body.classList.add("is-loading");
   window.setTimeout(() => {
@@ -13,6 +15,22 @@
 
   if (year) {
     year.textContent = new Date().getFullYear();
+  }
+
+  if (hero && heroRail && window.matchMedia("(pointer: fine)").matches) {
+    hero.addEventListener("pointermove", (event) => {
+      const rect = hero.getBoundingClientRect();
+      const railShift = ((event.clientY - rect.top) / rect.height - 0.5) * 24;
+      const railDrift = ((event.clientX - rect.left) / rect.width - 0.5) * 8;
+
+      heroRail.style.setProperty("--rail-shift", `${railShift.toFixed(1)}px`);
+      heroRail.style.setProperty("--rail-drift", `${railDrift.toFixed(1)}px`);
+    });
+
+    hero.addEventListener("pointerleave", () => {
+      heroRail.style.removeProperty("--rail-shift");
+      heroRail.style.removeProperty("--rail-drift");
+    });
   }
 
   function closeNav() {
