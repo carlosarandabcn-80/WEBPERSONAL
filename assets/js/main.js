@@ -7,15 +7,20 @@
 
   function refineHero() {
     const hero = document.querySelector(".hero");
+    const eyebrow = hero?.querySelector(".eyebrow");
     const heroTitle = document.querySelector("#hero-title");
     const heroMedia = document.querySelector(".hero-media");
     const heroImage = heroMedia?.querySelector("img");
 
     hero?.setAttribute("data-hero", "");
 
+    if (eyebrow) {
+      eyebrow.textContent = "Integración Social - Educación Social - Barcelona";
+    }
+
     if (heroTitle) {
       heroTitle.innerHTML =
-        '<span class="hero-prefix">soy</span> <span class="accent-text">CARLOS</span> ARANDA.';
+        '<span class="hero-prefix">Soy</span><span class="hero-name">Carlos</span><span class="hero-name">Aranda</span>';
     }
 
     if (hero && heroMedia && !hero.querySelector("[data-hero-rail]")) {
