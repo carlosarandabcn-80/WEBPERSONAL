@@ -1,12 +1,15 @@
 :root {
-  --accent: #173f63;
-  --accent-dark: #0e2f4d;
-  --accent-soft: rgba(23, 63, 99, 0.07);
-  --accent-line: rgba(23, 63, 99, 0.18);
+  --bg: #f2f2f2;
+  --bg-soft: #fafafa;
+  --paper: #ffffff;
+  --accent: #3b3b3b;
+  --accent-dark: #111111;
+  --accent-soft: rgba(17, 17, 17, 0.055);
+  --accent-line: rgba(17, 17, 17, 0.18);
   --ink: #111111;
   --ink-soft: #111111;
   --muted: #111111;
-  --shadow: 0 28px 90px rgba(17, 24, 32, 0.12);
+  --shadow: 0 28px 90px rgba(0, 0, 0, 0.12);
 }
 
 body,
@@ -40,8 +43,8 @@ time,
 }
 
 .site-header {
-  background: rgba(238, 240, 251, 0.92);
-  border-bottom-color: rgba(23, 63, 99, 0.12);
+  background: rgba(242, 242, 242, 0.92);
+  border-bottom-color: rgba(17, 17, 17, 0.12);
 }
 
 .site-header::before {
@@ -142,14 +145,14 @@ time,
 }
 
 .button-primary {
-  background: rgba(23, 63, 99, 0.08);
+  background: rgba(17, 17, 17, 0.065);
   border-color: var(--accent);
-  box-shadow: 0 14px 30px rgba(23, 63, 99, 0.1);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.09);
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: rgba(23, 63, 99, 0.13);
+  background: rgba(17, 17, 17, 0.12);
 }
 
 .button-secondary {
@@ -171,12 +174,17 @@ time,
 .hero-media img {
   width: min(100%, 31rem);
   max-height: min(68svh, 40rem);
-  aspect-ratio: 1117 / 1020;
+  aspect-ratio: 2 / 3;
   object-fit: contain;
+  filter: grayscale(1) drop-shadow(0 28px 42px rgba(0, 0, 0, 0.14)) contrast(1.04);
+}
+
+.hero:hover .hero-media img {
+  filter: grayscale(1) drop-shadow(0 32px 50px rgba(0, 0, 0, 0.17)) contrast(1.05);
 }
 
 .brush-accent {
-  background: linear-gradient(135deg, transparent 0 18%, rgba(23, 63, 99, 0.11) 18% 30%, transparent 30%), rgba(23, 63, 99, 0.035);
+  background: linear-gradient(135deg, transparent 0 18%, rgba(17, 17, 17, 0.1) 18% 30%, transparent 30%), rgba(17, 17, 17, 0.03);
 }
 
 .hero-rail {
@@ -197,6 +205,7 @@ time,
 
 .profile-media img {
   object-position: center center;
+  filter: grayscale(1) contrast(1.04);
 }
 
 .resume-aside {
@@ -233,15 +242,15 @@ time,
   overflow: hidden;
   border: 1px solid var(--accent-line);
   background:
-    linear-gradient(135deg, rgba(23, 63, 99, 0.08), transparent 42%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(248, 248, 255, 0.92));
+    linear-gradient(135deg, rgba(17, 17, 17, 0.065), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(248, 248, 248, 0.92));
 }
 
 .video-reserve::before {
   content: "";
   position: absolute;
   inset: 1rem;
-  border: 1px solid rgba(23, 63, 99, 0.16);
+  border: 1px solid rgba(17, 17, 17, 0.16);
 }
 
 .video-reserve::after {
