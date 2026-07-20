@@ -1,8 +1,8 @@
 :root {
-  --accent: #69cce3;
-  --accent-dark: #37a9c6;
-  --accent-soft: rgba(105, 204, 227, 0.12);
-  --accent-line: rgba(105, 204, 227, 0.48);
+  --accent: #173f63;
+  --accent-dark: #0e2f4d;
+  --accent-soft: rgba(23, 63, 99, 0.07);
+  --accent-line: rgba(23, 63, 99, 0.18);
   --ink: #111111;
   --ink-soft: #111111;
   --muted: #111111;
@@ -41,17 +41,39 @@ time,
 
 .site-header {
   background: rgba(238, 240, 251, 0.92);
-  border-bottom-color: rgba(105, 204, 227, 0.22);
+  border-bottom-color: rgba(23, 63, 99, 0.12);
 }
 
 .site-header::before {
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  opacity: 0.52;
+  opacity: 0.18;
 }
 
 .brand-mark,
 .footer-logo {
-  color: var(--accent);
+  color: #000000;
+}
+
+.brand-mark {
+  width: 88px;
+  height: 62px;
+}
+
+.footer-logo {
+  width: 72px;
+  height: 54px;
+}
+
+.nav-panel,
+.header-link {
+  color: var(--accent-dark) !important;
+}
+
+.nav-panel a:hover,
+.nav-panel a:focus-visible,
+.header-link:hover,
+.header-link:focus-visible {
+  color: #000000 !important;
 }
 
 .nav-panel {
@@ -82,7 +104,7 @@ time,
 
 #hero-title {
   max-width: none;
-  color: var(--ink) !important;
+  color: var(--accent-dark) !important;
   font-size: clamp(2.75rem, 4.25vw, 4.35rem);
   line-height: 1;
   letter-spacing: 0;
@@ -91,7 +113,7 @@ time,
 #hero-title .hero-prefix,
 #hero-title .hero-name {
   display: inline;
-  color: var(--ink) !important;
+  color: var(--accent-dark) !important;
   margin: 0;
   padding: 0;
   font: inherit;
@@ -120,14 +142,14 @@ time,
 }
 
 .button-primary {
-  background: rgba(105, 204, 227, 0.16);
+  background: rgba(23, 63, 99, 0.08);
   border-color: var(--accent);
-  box-shadow: 0 14px 30px rgba(55, 169, 198, 0.14);
+  box-shadow: 0 14px 30px rgba(23, 63, 99, 0.1);
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: rgba(105, 204, 227, 0.24);
+  background: rgba(23, 63, 99, 0.13);
 }
 
 .button-secondary {
@@ -154,7 +176,7 @@ time,
 }
 
 .brush-accent {
-  background: linear-gradient(135deg, transparent 0 18%, rgba(105, 204, 227, 0.22) 18% 30%, transparent 30%), rgba(105, 204, 227, 0.08);
+  background: linear-gradient(135deg, transparent 0 18%, rgba(23, 63, 99, 0.11) 18% 30%, transparent 30%), rgba(23, 63, 99, 0.035);
 }
 
 .hero-rail {
@@ -211,7 +233,7 @@ time,
   overflow: hidden;
   border: 1px solid var(--accent-line);
   background:
-    linear-gradient(135deg, rgba(105, 204, 227, 0.18), transparent 42%),
+    linear-gradient(135deg, rgba(23, 63, 99, 0.08), transparent 42%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(248, 248, 255, 0.92));
 }
 
@@ -219,7 +241,7 @@ time,
   content: "";
   position: absolute;
   inset: 1rem;
-  border: 1px solid rgba(105, 204, 227, 0.34);
+  border: 1px solid rgba(23, 63, 99, 0.16);
 }
 
 .video-reserve::after {
@@ -274,6 +296,16 @@ time,
 }
 
 @media (max-width: 720px) {
+  .brand-mark {
+    width: 72px;
+    height: 52px;
+  }
+
+  .footer-logo {
+    width: 64px;
+    height: 48px;
+  }
+
   .hero {
     gap: 1.25rem;
   }
