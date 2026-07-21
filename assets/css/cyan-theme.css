@@ -271,17 +271,17 @@ section[id] {
   z-index: 2;
   width: auto;
   max-width: none;
-  height: clamp(900px, 122svh, 1120px);
+  height: clamp(860px, 116svh, 1060px);
   max-height: none;
   aspect-ratio: auto;
   object-fit: contain;
   object-position: center top;
   filter: grayscale(1) contrast(1.055) drop-shadow(0 28px 45px rgba(0, 0, 0, 0.14));
-  transform: translateY(-10%);
+  transform: translate(-2.5%, -9.5%);
 }
 
 .hero:hover .hero-media img {
-  transform: translateY(-11%);
+  transform: translate(-2.5%, -10.5%);
   filter: grayscale(1) contrast(1.07) drop-shadow(0 32px 52px rgba(0, 0, 0, 0.17));
 }
 
@@ -702,9 +702,9 @@ section[id] {
   .hero-media img {
     width: auto;
     max-width: none;
-    height: 920px;
+    height: 880px;
     max-height: none;
-    transform: translateY(-9.5%);
+    transform: translate(-2.5%, -9%);
   }
 
   .hero-social {
@@ -780,13 +780,13 @@ section[id] {
   .hero-media img {
     width: auto;
     max-width: none;
-    height: 830px;
+    height: 790px;
     max-height: none;
-    transform: translateY(-10%);
+    transform: translate(-2.5%, -9%);
   }
 
   .hero:hover .hero-media img {
-    transform: translateY(-11%);
+    transform: translate(-2.5%, -10%);
   }
 
   .hero-actions,
