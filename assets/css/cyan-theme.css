@@ -145,6 +145,10 @@ h3 {
   padding: clamp(5.5rem, 10vw, 9rem) 0;
 }
 
+section[id] {
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
 .hero {
   width: min(1260px, calc(100% - clamp(1.5rem, 5vw, 5rem)));
   min-height: max(760px, 100svh);
@@ -267,17 +271,17 @@ h3 {
   z-index: 2;
   width: auto;
   max-width: none;
-  height: clamp(740px, 100.6svh, 992px);
+  height: clamp(900px, 122svh, 1120px);
   max-height: none;
   aspect-ratio: auto;
   object-fit: contain;
   object-position: center top;
   filter: grayscale(1) contrast(1.055) drop-shadow(0 28px 45px rgba(0, 0, 0, 0.14));
-  transform: translateY(-7%);
+  transform: translateY(-10%);
 }
 
 .hero:hover .hero-media img {
-  transform: translateY(-8%);
+  transform: translateY(-11%);
   filter: grayscale(1) contrast(1.07) drop-shadow(0 32px 52px rgba(0, 0, 0, 0.17));
 }
 
@@ -537,51 +541,84 @@ h3 {
   font-size: clamp(1.3rem, 2.2vw, 2rem);
 }
 
-.salsa {
+.culture {
   padding-top: 2rem;
 }
 
-.salsa-layout {
-  grid-template-columns: minmax(0, 0.68fr) minmax(290px, 0.5fr);
-  gap: clamp(2rem, 5vw, 5rem);
-  padding: clamp(2rem, 5vw, 4rem);
-  border: 0;
-  border-radius: 34px;
-  background: var(--paper);
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 }
 
-.salsa-copy {
-  max-width: 660px;
-}
-
-.video-block {
-  gap: 0.75rem;
-}
-
-.video-reserve {
-  min-height: 250px;
+.video-card {
   overflow: hidden;
-  border: 0;
-  border-radius: 24px;
-  background: #e5e5e2;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: inset 0 0 0 1px rgba(16, 16, 16, 0.045);
+  transition: transform 220ms var(--ease), box-shadow 220ms var(--ease);
 }
 
-.video-reserve::before {
-  inset: 0.8rem;
-  border-color: rgba(16, 16, 16, 0.09);
-  border-radius: 18px;
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.08);
 }
 
-.video-reserve::after {
-  width: 62px;
-  height: 62px;
-  border: 0;
-  background: var(--paper);
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
+.video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #111111;
 }
 
-.video-reserve span {
-  border-left-color: var(--ink);
+.video-frame video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #111111;
+}
+
+.video-card-copy {
+  padding: clamp(1.35rem, 3vw, 2rem);
+}
+
+.video-card-copy span {
+  display: block;
+  margin-bottom: 2.6rem;
+  color: var(--muted);
+  font-size: 0.64rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.video-card-copy h3 {
+  margin-bottom: 0.65rem;
+  font-size: clamp(1.45rem, 2.4vw, 2.25rem);
+}
+
+.video-card-copy p {
+  max-width: 38rem;
+  margin-bottom: 0;
+}
+
+.video-card-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  align-items: stretch;
+}
+
+.video-card-featured .video-frame {
+  min-height: 380px;
+  aspect-ratio: auto;
+}
+
+.video-card-featured .video-card-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .contact {
@@ -644,8 +681,7 @@ h3 {
   .hero,
   .profile-layout,
   .resume-layout,
-  .contact-panel,
-  .salsa-layout {
+  .contact-panel {
     grid-template-columns: 1fr;
   }
 
@@ -666,8 +702,9 @@ h3 {
   .hero-media img {
     width: auto;
     max-width: none;
-    height: 856px;
+    height: 920px;
     max-height: none;
+    transform: translateY(-9.5%);
   }
 
   .hero-social {
@@ -743,13 +780,13 @@ h3 {
   .hero-media img {
     width: auto;
     max-width: none;
-    height: 670px;
+    height: 830px;
     max-height: none;
-    transform: translateY(-4%);
+    transform: translateY(-10%);
   }
 
   .hero:hover .hero-media img {
-    transform: translateY(-5%);
+    transform: translateY(-11%);
   }
 
   .hero-actions,
@@ -794,14 +831,29 @@ h3 {
     margin-bottom: 2.8rem;
   }
 
-  .salsa-layout,
   .contact-panel {
     padding: 1.4rem;
     border-radius: 28px;
   }
 
-  .video-reserve {
-    min-height: 190px;
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-card,
+  .video-card-featured {
+    grid-column: auto;
+    display: block;
+    border-radius: 24px;
+  }
+
+  .video-card-featured .video-frame {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .video-card-copy span {
+    margin-bottom: 2rem;
   }
 
   .site-footer {
