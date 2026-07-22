@@ -443,6 +443,10 @@ body {
   line-height: 1.92;
 }
 
+.hero-lead::before {
+  display: none;
+}
+
 .hero-actions {
   gap: clamp(2.4rem, 4vw, 4rem);
   margin-top: clamp(2.2rem, 5.4vh, 3.4rem);
@@ -458,6 +462,8 @@ body {
 .hero .button-primary {
   min-width: clamp(220px, 15.8vw, 253px);
   padding-inline: 2.2rem;
+  background: var(--reference-green) !important;
+  color: white !important;
 }
 
 .hero .button-secondary {
@@ -467,14 +473,14 @@ body {
   border: 0;
   border-bottom: 1px solid var(--reference-green);
   border-radius: 0;
-  background: transparent;
-  color: var(--reference-green);
+  background: transparent !important;
+  color: var(--reference-green) !important;
 }
 
 .hero .button-secondary:hover,
 .hero .button-secondary:focus-visible {
-  background: transparent;
-  color: var(--reference-ink);
+  background: transparent !important;
+  color: var(--reference-ink) !important;
 }
 
 .hero-media::before {
