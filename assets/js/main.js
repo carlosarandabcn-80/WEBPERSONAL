@@ -31,10 +31,7 @@
     }
 
     if (heroImage) {
-      heroImage.src = "assets/images/carlos-color-hero-cutout.webp";
-      heroImage.width = 1024;
-      heroImage.height = 1536;
-      heroImage.alt = "Retrato profesional recortado en blanco y negro de Carlos Aranda Sánchez";
+      heroImage.alt = "Retrato editorial en blanco y negro de Carlos Aranda Sánchez";
     }
   }
 
