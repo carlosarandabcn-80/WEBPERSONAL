@@ -351,15 +351,24 @@ section[id] {
 }
 
 .profile-media picture {
+  isolation: isolate;
   aspect-ratio: 3 / 4;
+  overflow: hidden;
   border-radius: 34px;
   box-shadow: none;
-  background: var(--paper);
+  background: #ffffff;
 }
 
-.profile-media img {
+.profile-media--cutout img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   object-position: center center;
-  filter: grayscale(1) contrast(1.04);
+  filter: contrast(1.035) drop-shadow(0 24px 34px rgba(0, 0, 0, 0.1));
+  transform: scale(1.018);
+  transform-origin: center top;
 }
 
 .profile-copy p {
@@ -754,6 +763,20 @@ section[id] {
 @media (max-width: 720px) {
   :root {
     --header-height: 86px;
+  }
+
+  .profile-media {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .profile-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .profile-media picture {
+    width: 100%;
   }
 
   .site-header {
