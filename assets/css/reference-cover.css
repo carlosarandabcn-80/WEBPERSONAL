@@ -499,10 +499,16 @@ body {
 }
 
 .hero-media img {
-  right: -5.8vw;
+  right: 0;
   bottom: -0.5rem;
   width: min(57vw, 912px);
   mix-blend-mode: multiply;
+  transform: scaleX(0.87);
+  transform-origin: right bottom;
+}
+
+.hero:hover .hero-media img {
+  transform: scaleX(0.87) scale(1.008);
 }
 
 @media (max-aspect-ratio: 3 / 2) and (min-width: 761px) {
@@ -752,6 +758,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .hero-media img,
   .hero:hover .hero-media img {
-    transform: none;
+    transform: scaleX(0.87);
   }
 }
