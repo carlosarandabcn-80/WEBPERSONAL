@@ -544,7 +544,36 @@ section[id] {
 }
 
 .education-grid article {
-  min-height: 210px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-logo {
+  display: grid;
+  width: 100%;
+  height: 92px;
+  place-items: center;
+  margin: 0 0 1.6rem;
+  padding: 1rem 1.25rem;
+  overflow: hidden;
+  border: 1px solid rgba(16, 16, 16, 0.06);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.education-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.education-grid h3 {
+  margin-bottom: 0.55rem;
+}
+
+.education-grid article > p {
+  margin-top: auto;
 }
 
 .insight-strip {
