@@ -82,6 +82,9 @@ h3 {
 }
 
 .wordmark {
+  display: block;
+  flex: 0 0 auto;
+  aspect-ratio: 758 / 116;
   background-image: url("data:image/webp;base64,base64: /tmp/carlosaranda-logo.webp: No such file or directory");
   background-position: center;
   background-repeat: no-repeat;
