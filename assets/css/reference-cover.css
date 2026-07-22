@@ -361,6 +361,173 @@ body {
   display: none;
 }
 
+/* Reference cover supplied by Carlos — desktop composition at 1600 × 1000. */
+.site-header {
+  top: 0;
+  right: 0;
+  left: 3.05vw;
+  min-height: clamp(88px, 10.5vh, 106px);
+  padding: 0 3vw 0 3.45vw;
+  border: 0;
+  border-radius: 0;
+  background: rgba(253, 253, 251, 0.94);
+  box-shadow: none;
+  backdrop-filter: blur(14px);
+}
+
+.site-header.is-scrolled {
+  top: 0;
+  min-height: 72px;
+  border-bottom: 1px solid var(--reference-line);
+  box-shadow: none;
+}
+
+.wordmark--header {
+  width: clamp(195px, 13.6vw, 218px);
+}
+
+.nav-panel {
+  gap: clamp(2.2rem, 4vw, 4rem);
+}
+
+.nav-panel a,
+.header-link {
+  font-size: clamp(0.64rem, 0.72vw, 0.72rem);
+  font-weight: 650;
+  letter-spacing: 0.045em;
+}
+
+.hero.section::after {
+  position: absolute;
+  top: 3.8vh;
+  bottom: 4.5vh;
+  left: 3.05vw;
+  z-index: 12;
+  width: 2px;
+  background: rgba(181, 167, 221, 0.66);
+  content: "";
+  pointer-events: none;
+}
+
+.hero-copy {
+  top: clamp(14.5rem, 29.5vh, 18.45rem);
+  left: 7.35vw;
+  width: min(56vw, 900px);
+}
+
+.eyebrow {
+  font-size: clamp(0.72rem, 0.94vw, 0.94rem);
+  letter-spacing: 0.07em;
+}
+
+.eyebrow::after {
+  display: none;
+}
+
+.hero h1 {
+  margin-top: clamp(2rem, 4.7vh, 3rem);
+  font-size: clamp(4.15rem, 5.9vw, 5.95rem);
+  letter-spacing: -0.06em;
+}
+
+.hero h1::after {
+  width: clamp(65px, 5.2vw, 82px);
+  height: 4px;
+  margin-top: clamp(2.2rem, 4.7vh, 2.95rem);
+}
+
+.hero-lead {
+  max-width: 650px;
+  margin-top: clamp(2rem, 4.3vh, 2.7rem);
+  font-size: clamp(1rem, 1.27vw, 1.27rem);
+  line-height: 1.92;
+}
+
+.hero-actions {
+  gap: clamp(2.4rem, 4vw, 4rem);
+  margin-top: clamp(2.2rem, 5.4vh, 3.4rem);
+}
+
+.hero .button {
+  min-height: 51px;
+  border-radius: 0;
+  font-size: clamp(0.66rem, 0.72vw, 0.72rem);
+  letter-spacing: 0.23em;
+}
+
+.hero .button-primary {
+  min-width: clamp(220px, 15.8vw, 253px);
+  padding-inline: 2.2rem;
+}
+
+.hero .button-secondary {
+  min-width: 0;
+  min-height: auto;
+  padding: 0 0 0.6rem;
+  border: 0;
+  border-bottom: 1px solid var(--reference-green);
+  border-radius: 0;
+  background: transparent;
+  color: var(--reference-green);
+}
+
+.hero .button-secondary:hover,
+.hero .button-secondary:focus-visible {
+  background: transparent;
+  color: var(--reference-ink);
+}
+
+.hero-media::before {
+  top: 17.2vh;
+  right: 0;
+  bottom: 0;
+  left: 63.25vw;
+  background: #dfe9df;
+}
+
+.hero-media img {
+  right: 0;
+  bottom: -0.5rem;
+  width: min(57vw, 912px);
+  mix-blend-mode: multiply;
+}
+
+.hero-social {
+  bottom: 4.8vh;
+  left: 7.35vw;
+  display: flex;
+  width: auto;
+  padding: 0;
+  border: 0;
+}
+
+.hero-social a {
+  gap: 0;
+  min-height: auto;
+  padding: 0;
+  font-size: clamp(0.62rem, 0.72vw, 0.72rem);
+  letter-spacing: 0.09em;
+}
+
+.hero-social a + a {
+  margin-left: 2.6rem;
+  padding-left: 2.6rem;
+  border: 0;
+}
+
+.hero-social a + a::before {
+  position: absolute;
+  margin-left: -2.75rem;
+  content: "·";
+  color: var(--reference-green);
+  font-size: 1rem;
+  line-height: 0.8;
+}
+
+.social-icon {
+  display: none;
+}
+
 @media (max-width: 1180px) {
   .site-header {
     grid-template-columns: minmax(190px, 1fr) auto auto;
