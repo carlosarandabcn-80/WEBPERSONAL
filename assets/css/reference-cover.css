@@ -428,16 +428,20 @@ body {
   margin-top: clamp(2rem, 4.7vh, 3rem);
   font-size: clamp(4.15rem, 5.9vw, 5.95rem);
   letter-spacing: -0.06em;
+  transform: scaleX(1.276);
+  transform-origin: left center;
 }
 
 .hero h1::after {
   width: clamp(65px, 5.2vw, 82px);
   height: 4px;
   margin-top: clamp(2.2rem, 4.7vh, 2.95rem);
+  transform: scaleX(0.784);
+  transform-origin: left center;
 }
 
 .hero-lead {
-  max-width: 650px;
+  max-width: 560px;
   margin-top: clamp(2rem, 4.3vh, 2.7rem);
   font-size: clamp(1rem, 1.27vw, 1.27rem);
   line-height: 1.92;
@@ -489,10 +493,13 @@ body {
   bottom: 0;
   left: 63.25vw;
   background: #dfe9df;
+  border-radius: 0;
+  clip-path: none;
+  transform: none;
 }
 
 .hero-media img {
-  right: 0;
+  right: -3.2vw;
   bottom: -0.5rem;
   width: min(57vw, 912px);
   mix-blend-mode: multiply;
