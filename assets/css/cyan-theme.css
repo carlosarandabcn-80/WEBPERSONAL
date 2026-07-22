@@ -264,10 +264,10 @@ section[id] {
 
 .hero-media img {
   position: absolute;
-  top: -22.5%;
+  top: -16.8%;
   left: 0;
   z-index: 2;
-  width: 121.8%;
+  width: 100%;
   max-width: none;
   height: auto;
   max-height: none;
@@ -775,7 +775,7 @@ section[id] {
   }
 
   .hero-media img {
-    width: 121.8%;
+    width: 100%;
     max-width: none;
     height: auto;
     max-height: none;
@@ -870,7 +870,7 @@ section[id] {
   }
 
   .hero-media img {
-    width: 121.8%;
+    width: 100%;
     max-width: none;
     height: auto;
     max-height: none;
