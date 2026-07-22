@@ -82,6 +82,10 @@ h3 {
 }
 
 .wordmark {
+  background-image: url("data:image/webp;base64,base64: /tmp/carlosaranda-logo.webp: No such file or directory");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   mix-blend-mode: multiply;
 }
 
@@ -215,7 +219,7 @@ section[id] {
   max-width: 760px;
   margin: 0 0 1.9rem;
   color: var(--dark-night) !important;
-  font-size: clamp(4.2rem, 6.8vw, 7rem);
+  font-size: clamp(4rem, 5.55vw, 6.2rem);
   font-weight: 420;
   line-height: 0.92;
   letter-spacing: -0.062em;
