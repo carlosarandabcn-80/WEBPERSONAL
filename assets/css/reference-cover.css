@@ -499,10 +499,17 @@ body {
 }
 
 .hero-media img {
-  right: -3.2vw;
+  right: -5.8vw;
   bottom: -0.5rem;
   width: min(57vw, 912px);
   mix-blend-mode: multiply;
+}
+
+@media (max-aspect-ratio: 3 / 2) and (min-width: 761px) {
+  .hero-media img {
+    top: calc((100vh - 62.5vw) / 2 + 7.2vw);
+    bottom: auto;
+  }
 }
 
 .hero-social {
