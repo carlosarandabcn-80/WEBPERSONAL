@@ -140,6 +140,44 @@ h3 {
   letter-spacing: 0.05em;
 }
 
+.linkedin-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
+.linkedin-header-button {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  color: #ffffff !important;
+  background: #0a66c2;
+  box-shadow: 0 8px 20px rgba(10, 102, 194, 0.22);
+  transition: transform 180ms var(--ease), background 180ms var(--ease), box-shadow 180ms var(--ease);
+}
+
+.linkedin-header-button::after {
+  display: none;
+}
+
+.linkedin-header-button:hover,
+.linkedin-header-button:focus-visible {
+  color: #ffffff !important;
+  background: #004182;
+  box-shadow: 0 10px 24px rgba(10, 102, 194, 0.3);
+  transform: translateY(-2px);
+}
+
+.linkedin-header-button .linkedin-icon {
+  width: 21px;
+  height: 21px;
+}
+
 .section {
   width: min(var(--max), calc(100% - clamp(1.5rem, 6vw, 6rem)));
   padding: clamp(5.5rem, 10vw, 9rem) 0;
@@ -703,6 +741,20 @@ section[id] {
   background: #ffffff;
 }
 
+.contact-panel .linkedin-contact-button {
+  gap: 0.7rem;
+  color: #ffffff !important;
+  background: #0a66c2;
+  box-shadow: 0 14px 32px rgba(10, 102, 194, 0.25);
+}
+
+.contact-panel .linkedin-contact-button:hover,
+.contact-panel .linkedin-contact-button:focus-visible {
+  color: #ffffff !important;
+  background: #004182;
+  box-shadow: 0 16px 36px rgba(10, 102, 194, 0.34);
+}
+
 .contact-panel .button-secondary {
   color: #ffffff !important;
   background: transparent;
@@ -804,6 +856,12 @@ section[id] {
     inset: 10px 8px auto;
     height: 62px;
     padding-inline: 12px;
+  }
+
+  .linkedin-header-button {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
   }
 
   .brand-mark {
