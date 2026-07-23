@@ -25,7 +25,7 @@ Landing page profesional en escala de grises, preparada para publicar en GitHub 
 La web se ha construido a partir del perfil facilitado:
 
 - Carlos Aranda Sanchez, Barcelona.
-- Contacto: `carlosarandabcn@gmail.com`, `680 223 287`, LinkedIn `/in/carlosarandabcn`.
+- Contacto: LinkedIn `/in/carlosarandabcn`.
 - Aptitudes: integracion social, educacion social, dinamizacion de grupos, salsa cubana, guitarra y percusion.
 - Idiomas: catalan, espanol e ingles profesional.
 - Experiencia destacada: integracion social, educacion social, profesor de salsa cubana, musica, atencion al cliente, formacion y produccion.
