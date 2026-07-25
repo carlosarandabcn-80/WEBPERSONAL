@@ -382,6 +382,7 @@ section[id] {
 .profile-layout {
   grid-template-columns: minmax(300px, 0.44fr) minmax(0, 0.72fr);
   gap: clamp(3rem, 8vw, 8rem);
+  align-items: start;
 }
 
 .profile-media::before {
