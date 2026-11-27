@@ -3,6 +3,8 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Carlos Aranda Sánchez | Educación Social, Integración y Cultura</title>
     <meta
@@ -30,6 +32,7 @@
     <a class="brand" href="#home" aria-label="Carlos Aranda, inicio"><img src="assets/images/logo-official.webp" width="42" height="42" alt="">Carlos Aranda</a>
     <button class="menu-button" type="button" aria-controls="primary-nav" aria-expanded="false" hidden>Menú</button>
     <nav id="primary-nav" class="nav-panel" aria-label="Navegación principal">
+      <a href="#creaciones">Creaciones</a>
       <a href="#about">Perfil</a>
       <a href="#services">Aporto</a>
       <a href="#work">Áreas</a>

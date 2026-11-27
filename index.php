@@ -15,6 +15,7 @@ require __DIR__ . '/plantillas/cabecera.php';
 <main id="main" tabindex="-1">
 <?php
 require __DIR__ . '/plantillas/portada.php';
+require __DIR__ . '/plantillas/creaciones.php';
 require __DIR__ . '/plantillas/secciones.php';
 ?>
 </main>
