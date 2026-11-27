@@ -1,0 +1,467 @@
+<?php defined('PORTFOLIO') || exit; ?>
+<section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-kicker">
+          <span>Perfil</span>
+        </div>
+        <div class="profile-layout">
+          <div class="profile-media profile-media--portrait">
+            <picture>
+              <img src="assets/images/perfil.webp" alt="Retrato profesional de Carlos Aranda Sánchez en blanco y negro" width="1200" height="1200" loading="lazy">
+            </picture>
+          </div>
+          <div class="profile-copy">
+            <h2 id="about-title">Una trayectoria orientada hacia la educación y el acompañamiento.</h2>
+            <p class="eyebrow">Integración Social - Educación Social - Barcelona</p>
+          <p class="hero-lead">
+            Estudiante de último curso de Educación Social, con formación en Integración Social y
+            experiencia en formación y dinamización de grupos. Trabajo con personas desde la
+            cercanía, la responsabilidad y la claridad.
+          </p>
+          <p>
+              Actualmente curso el último año del Grado en Educación Social en la Universidad
+              Internacional de La Rioja, después de haber realizado estudios de Integración Social en
+              Jesuïtes Sarrià - Sant Ignasi. Mi desarrollo profesional se orienta hacia el ámbito
+              social y educativo, con interés por el trabajo con personas, los procesos de inclusión,
+              la participación y la vida comunitaria.
+            </p>
+            <p>
+              Mi trayectoria reúne experiencias en producción gráfica, formación, atención al
+              cliente, coordinación de incidencias y dinamización de grupos. Durante más de catorce
+              años trabajé en tratamiento de la información y producción gráfica, un entorno que
+              reforzó mi capacidad de organización, precisión y responsabilidad.
+            </p>
+            <p>
+              También he ejercido como formador y como instructor de danza, gestionando grupos y
+              acompañando procesos de aprendizaje en espacios de participación y relación social.
+              Este recorrido aporta a mi perfil socioeducativo una mirada práctica, experiencia
+              organizativa y recursos para comunicar, formar y elaborar materiales con claridad.
+              Entiendo la educación social como un trabajo próximo a la realidad de las personas,
+              atento al contexto y comprometido con la construcción de oportunidades de
+              participación y desarrollo.
+            </p>
+            <dl class="profile-facts">
+              <div>
+                <dt>Base</dt>
+                <dd>Barcelona</dd>
+              </div>
+              <div>
+                <dt>Enfoque</dt>
+                <dd>Acompañamiento socioeducativo</dd>
+              </div>
+              <div>
+                <dt>Lenguajes</dt>
+                <dd>Comunicación, formación y grupo</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+<section class="section services" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <span class="section-kicker">
+            <span>Aportación</span>
+          </span>
+          <h2 id="services-title">Qué puedo aportar.</h2>
+        </div>
+        <div class="service-list">
+          <article>
+            <h3>Acompañamiento socioeducativo</h3>
+            <p>
+              Participación en procesos educativos orientados al desarrollo personal, la autonomía,
+              la inclusión y la vinculación con el entorno. Una forma de trabajo basada en la
+              escucha, la presencia y el respeto por los ritmos de cada persona.
+            </p>
+          </article>
+          <article>
+            <h3>Dinamización de grupos</h3>
+            <p>
+              Experiencia en la conducción de clases, actividades y espacios de participación.
+              Capacidad para organizar grupos, explicar contenidos, facilitar la interacción y
+              generar un clima de confianza y colaboración.
+            </p>
+          </article>
+          <article>
+            <h3>Formación</h3>
+            <p>
+              Experiencia como formador en atención al cliente y como instructor de danza.
+              Preparación y transmisión de contenidos de forma comprensible, adaptada al grupo y
+              orientada al aprendizaje práctico.
+            </p>
+          </article>
+          <article>
+            <h3>Comunicación y recursos visuales</h3>
+            <p>
+              Trayectoria en diseño y producción gráfica aplicada a la creación de materiales
+              claros, estructurados y accesibles. Una competencia útil para proyectos educativos,
+              acciones de sensibilización, presentaciones y recursos de apoyo.
+            </p>
+          </article>
+          <article>
+            <h3>Organización y gestión de incidencias</h3>
+            <p>
+              Experiencia profesional en contextos que requieren atención, seguimiento, coordinación
+              y resolución de situaciones. Capacidad para ordenar información, atender demandas y
+              mantener una comunicación profesional durante todo el proceso.
+            </p>
+          </article>
+        </div>
+      </section>
+
+<section class="section work" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <span class="section-kicker">
+            <span>Áreas</span>
+          </span>
+          <h2 id="work-title">Áreas de interés y aportación.</h2>
+        </div>
+        <div class="work-grid">
+          <article>
+            <h3>Educación social</h3>
+            <p>
+              Interés por los procesos educativos que favorecen la autonomía, la participación y el
+              desarrollo de las personas en sus contextos cotidianos.
+            </p>
+          </article>
+          <article>
+            <h3>Integración social</h3>
+            <p>
+              Formación orientada al acompañamiento de personas y grupos, la inclusión, la
+              convivencia y el acceso a oportunidades y recursos comunitarios.
+            </p>
+          </article>
+          <article>
+            <h3>Dinamización y participación</h3>
+            <p>
+              Experiencia en la gestión de grupos y en la creación de espacios donde las personas
+              puedan aprender, relacionarse y participar activamente.
+            </p>
+          </article>
+          <article>
+            <h3>Formación y aprendizaje</h3>
+            <p>
+              Diseño y desarrollo de acciones formativas desde una comunicación directa, ordenada y
+              adaptada a las necesidades del grupo.
+            </p>
+          </article>
+          <article>
+            <h3>Comunicación social</h3>
+            <p>
+              Uso de la comunicación escrita y visual para presentar contenidos, facilitar su
+              comprensión y apoyar proyectos educativos y sociales.
+            </p>
+          </article>
+          <article>
+            <h3>Cultura y expresión</h3>
+            <p>
+              Vinculación con la música y la danza como espacios de aprendizaje, encuentro,
+              participación y construcción de vínculos.
+            </p>
+          </article>
+        </div>
+      </section>
+
+<section class="section experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <span class="section-kicker">
+            <span>Experiencia</span>
+          </span>
+          <h2 id="experience-title">Experiencia que suma perspectivas.</h2>
+          <p>
+            Mi recorrido profesional comenzó en el ámbito del diseño y la producción gráfica. Tras
+            una primera etapa en preimpresión y diseño, desarrollé durante más de catorce años
+            tareas vinculadas al tratamiento de la información y la producción gráfica en CTI
+            Soluciones. Esta experiencia consolidó una forma de trabajar basada en la precisión, la
+            continuidad, la organización y el cumplimiento de responsabilidades.
+          </p>
+          <p>
+            Paralelamente, ejercí como instructor de danza durante más de seis años, dinamizando
+            clases y espacios de baile social. El contacto continuado con grupos diversos me
+            permitió desarrollar habilidades de comunicación, adaptación y gestión de las relaciones
+            dentro del grupo.
+          </p>
+          <p>
+            También he trabajado en formación, atención al cliente, postventa y coordinación de
+            incidencias en empresas como IKEA, Emergia, DABA e Iberphone. Estas funciones me
+            acercaron a situaciones que requieren escucha, claridad, capacidad de respuesta y
+            atención personalizada.
+          </p>
+          <p>
+            Actualmente, mi formación en Educación Social e Integración Social articula estas
+            experiencias dentro de un nuevo horizonte profesional. La comunicación, la formación, la
+            gestión de grupos y la creación de recursos se convierten así en herramientas para el
+            trabajo socioeducativo.
+          </p>
+        </div>
+        <div class="timeline">
+          <article>
+            <span class="period">CTI Soluciones · 2009-2024</span>
+            <h3>Producción gráfica y tratamiento de la información</h3>
+            <p>Experiencia prolongada en producción gráfica, tratamiento de información y procesos de trabajo que requieren precisión y organización.</p>
+          </article>
+          <article>
+            <span class="period">2016-2023</span>
+            <h3>Instructor de danza</h3>
+            <p>Dinamización de clases y espacios de baile social. Gestión de grupos y acompañamiento de procesos de aprendizaje.</p>
+          </article>
+          <article>
+            <span class="period">IKEA · 2005-2008</span>
+            <h3>Formador y agente de postventa</h3>
+            <p>Atención postventa y formación de profesionales en atención al cliente.</p>
+          </article>
+          <article>
+            <span class="period">Diversas empresas · 2001-2012</span>
+            <h3>Atención al cliente y coordinación de incidencias</h3>
+            <p>Experiencia en atención a empresas y particulares, seguimiento de consultas, soporte y resolución de incidencias.</p>
+          </article>
+          <article>
+            <span class="period">2000-2005</span>
+            <h3>Diseño gráfico y preimpresión</h3>
+            <p>Formación y experiencia inicial en diseño, preimpresión y producción de materiales gráficos.</p>
+          </article>
+        </div>
+      </section>
+
+<section class="section resume" id="resume" aria-labelledby="resume-title">
+        <div class="section-heading">
+          <span class="section-kicker">
+            <span>CV</span>
+          </span>
+          <h2 id="resume-title">Trayectoria profesional y formación.</h2>
+          <p>
+            Mi currículum recoge una trayectoria construida en distintos ámbitos profesionales y
+            orientada actualmente hacia la Educación Social. En él pueden consultarse mi formación,
+            mi experiencia en producción gráfica, formación, dinamización de grupos, atención al
+            cliente y coordinación de incidencias, así como las competencias desarrolladas a lo largo
+            de este recorrido.
+          </p>
+        </div>
+        <div class="resume-layout">
+          <div class="resume-list">
+            <article>
+              <span class="period">Nov 2009 - Abr 2024 · 14 años 6 meses</span>
+              <h3>CTI Soluciones · Producción gráfica</h3>
+              <p>Barcelona, Cataluña, España.</p>
+            </article>
+            <article>
+              <span class="period">Ene 2009 - Abr 2024 · 15 años 4 meses</span>
+              <h3>CTI Soluciones · Operador de producción</h3>
+              <p>Tratamiento de la información y producción gráfica.</p>
+            </article>
+            <article>
+              <span class="period">Oct 2016 - Ene 2023 · 6 años 4 meses</span>
+              <h3>Carlos Aranda Sánchez · Instructor de danza</h3>
+              <p>Dinamización de clases y baile social. Gestión de grupos. Barcelona y alrededores.</p>
+            </article>
+            <article>
+              <span class="period">Ago 2011 - Mar 2012 · 8 meses</span>
+              <h3>Emergia · Agente del servicio de atención al cliente</h3>
+              <p>Tienda online de Vodafone. Barcelona, Cataluña, España.</p>
+            </article>
+            <article>
+              <span class="period">Sep 2008 - Dic 2008 · 4 meses</span>
+              <h3>DABA, distribuidor exclusivo Nespresso · Profesional de atención al cliente</h3>
+              <p>Atención a empresas. Sant Cugat del Vallès, Cataluña, España.</p>
+            </article>
+            <article>
+              <span class="period">Jun 2007 - Jul 2008 · 1 año 2 meses</span>
+              <h3>MONTAPLUS HOGAR SL · Montaje</h3>
+              <p>Montaje y medición de cocinas IKEA. Barcelona, Cataluña, España.</p>
+            </article>
+            <article>
+              <span class="period">Nov 2005 - Jun 2008 · 2 años 8 meses</span>
+              <h3>IKEA · Formador</h3>
+              <p>Agente postventa. Formador en atención al cliente. Hospitalet de Llobregat.</p>
+            </article>
+            <article>
+              <span class="period">Nov 2003 - Ene 2005 · 1 año 3 meses</span>
+              <h3>TECNIMARCK · Diseñador gráfico</h3>
+              <p>Experiencia profesional en diseño gráfico.</p>
+            </article>
+            <article>
+              <span class="period">Feb 2002 - Nov 2003 · 1 año 10 meses</span>
+              <h3>IBERPHONE TELEMARKETING · Coordinador de incidencias</h3>
+              <p>Barcelona, Cataluña, España.</p>
+            </article>
+            <article>
+              <span class="period">Jul 2002 - Sep 2002 · 3 meses</span>
+              <h3>LLAMAS S.L · Operador de producción</h3>
+              <p>Experiencia operativa en producción.</p>
+            </article>
+            <article>
+              <span class="period">Jun 2001 - Jun 2002 · 1 año 1 mes</span>
+              <h3>POWERLINE TELEMARKETING · Agente del servicio de atención al cliente</h3>
+              <p>Barcelona, Cataluña, España.</p>
+            </article>
+            <article>
+              <span class="period">Oct 2000 - Jun 2001 · 9 meses</span>
+              <h3>INSOL PREIMPRESIONES · Estudiante en prácticas</h3>
+              <p>Esplugues de Llobregat, Cataluña, España.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+<section class="section education" id="education" aria-labelledby="education-title">
+        <div class="section-heading">
+          <span class="section-kicker">
+            <span>Formación</span>
+          </span>
+          <h2 id="education-title">Formación social y educativa.</h2>
+          <p>
+            Actualmente curso el Grado en Educación Social en la Universidad Internacional de La
+            Rioja. Mi formación se completa con los estudios de Integración Social realizados en
+            Jesuïtes Sarrià - Sant Ignasi.
+          </p>
+          <p>
+            Este itinerario me ha permitido profundizar en los fundamentos de la intervención
+            socioeducativa, la inclusión social, el trabajo con grupos y el papel de la comunidad en
+            los procesos de desarrollo y participación.
+          </p>
+          <p>
+            Mi formación inicial en Diseño Gráfico aporta una competencia complementaria para la
+            elaboración de recursos visuales, materiales educativos y soportes de comunicación.
+          </p>
+        </div>
+        <div class="education-grid">
+          <article>
+            <figure class="education-logo">
+              <img src="assets/images/logo-unir.png" alt="UNIR, La Universidad en Internet" loading="lazy" decoding="async">
+            </figure>
+            <h3>Universidad Internacional de La Rioja</h3>
+            <p>Grado en Educación Social. En curso.</p>
+          </article>
+          <article>
+            <figure class="education-logo">
+              <img src="assets/images/logo-jesuites-sarria.png" alt="Jesuïtes Sarrià - Sant Ignasi" loading="lazy" decoding="async">
+            </figure>
+            <h3>Jesuïtes Sarrià - Sant Ignasi</h3>
+            <p>Integración Social · 2025</p>
+          </article>
+          <article>
+            <figure class="education-logo education-logo--dark">
+              <img src="assets/images/logo-salesians-sarria.png" alt="Salesians Sarrià" loading="lazy" decoding="async">
+            </figure>
+            <h3>Salesians Sarrià</h3>
+            <p>Ciclo Formativo de Grado Superior en Diseño Gráfico. 2003-2005.</p>
+          </article>
+          <article>
+            <figure class="education-logo education-logo--dark">
+              <img src="assets/images/logo-salesians-sarria.png" alt="Salesians Sarrià" loading="lazy" decoding="async">
+            </figure>
+            <h3>Salesians Sarrià</h3>
+            <p>Bachillerato de Humanidades. 1996-2000.</p>
+          </article>
+        </div>
+      </section>
+
+<section class="section insights" aria-labelledby="insights-title">
+        <div class="section-heading">
+          <span class="section-kicker">
+            <span>Ideas</span>
+          </span>
+          <h2 id="insights-title">Frases breves para destacados.</h2>
+        </div>
+        <div class="insight-strip">
+          <article>
+            <h3>La educación comienza en la forma de relacionarnos.</h3>
+            <p>Escuchar, organizar y acompañar también son formas de intervenir.</p>
+          </article>
+          <article>
+            <h3>La participación se construye creando espacios.</h3>
+            <p>Espacios donde cada persona pueda formar parte, aprender y relacionarse.</p>
+          </article>
+          <article>
+            <h3>Comunicar con claridad facilita el aprendizaje.</h3>
+            <p>La experiencia profesional adquiere un nuevo sentido cuando se pone al servicio de las personas.</p>
+          </article>
+        </div>
+      </section>
+
+<section class="section culture" id="culture" aria-labelledby="culture-title">
+        <div class="section-heading">
+          <span class="section-kicker">
+            <span>Cultura en movimiento</span>
+          </span>
+          <h2 id="culture-title">Ritmo, cuerpo y comunidad.</h2>
+          <p>
+            La expresión corporal, la música y la práctica compartida son también espacios de
+            aprendizaje, vínculo y participación.
+          </p>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-frame">
+              <video controls playsinline preload="none" aria-label="Vídeo de capoeira Angola" width="640" height="400" poster="assets/images/capoeira-angola.webp">
+                <source src="assets/videos/capoeira-angola.mp4" type="video/mp4"></source>
+                Tu navegador no puede reproducir este vídeo.
+              </video>
+            </div>
+            <div class="video-card-copy">
+              <span>Movimiento</span>
+              <h3>Capoeira Angola</h3>
+              <p>Juego, expresión corporal y tradición afrobrasileña en un espacio compartido.</p>
+            </div>
+          <details><summary>Descripción visual de Capoeira Angola</summary>
+    <p>Dos participantes con camiseta amarilla se alternan en el centro de una sala. Se agachan, apoyan las manos en el suelo y levantan las piernas mientras otras personas observan desde los lados.</p></details>
+    <a href="assets/videos/capoeira-angola.mp4">Abrir el vídeo de Capoeira Angola (MP4)</a></article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <video controls playsinline preload="none" poster="assets/images/batucada-poster.webp?v=batucadaa20260722" aria-label="Vídeo de batucada afrobrasileira" width="640" height="400">
+                <source src="assets/videos/batucada-afrobrasileira.mp4?v=batucadaa20260722" type="video/mp4"></source>
+                Tu navegador no puede reproducir este vídeo.
+              </video>
+            </div>
+            <div class="video-card-copy">
+              <span>Ritmo</span>
+              <h3>Batucada afrobrasileira</h3>
+              <p>Percusión colectiva, coordinación y energía de grupo a través del ritmo.</p>
+            </div>
+          <details><summary>Descripción visual de Batucada afrobrasileira</summary>
+    <p>Tras el rótulo inicial, el grupo avanza con tambores entre el público. La cámara alterna planos del conjunto y de quienes llevan las baquetas.</p></details>
+    <a href="assets/videos/batucada-afrobrasileira.mp4?v=batucadaa20260722">Abrir el vídeo de Batucada afrobrasileira (MP4)</a></article>
+
+          <article class="video-card video-card-featured">
+            <div class="video-frame">
+              <video controls playsinline preload="none" aria-label="Vídeo de salsa cubana" width="640" height="400" poster="assets/images/salsa-cubana.webp">
+                <source src="assets/videos/salsa-cubana.mp4" type="video/mp4"></source>
+                Tu navegador no puede reproducir este vídeo.
+              </video>
+            </div>
+            <div class="video-card-copy">
+              <span>Danza</span>
+              <h3>Salsa cubana</h3>
+              <p>Baile social, musicalidad y conexión con el grupo desde una práctica viva.</p>
+            </div>
+          <details><summary>Descripción visual de Salsa cubana</summary>
+    <p>Varias parejas alternan pasos y giros. El montaje pasa de una sala a espacios al aire libre, entre ellos un templete con columnas.</p></details>
+    <a href="assets/videos/salsa-cubana.mp4">Abrir el vídeo de Salsa cubana (MP4)</a></article>
+        </div>
+      </section>
+
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <div>
+            <span class="section-kicker">
+              <span>Contacto</span>
+            </span>
+            <h2 id="contact-title">Hablemos.</h2>
+            <p>
+              Estoy interesado en conocer entidades, centros educativos, asociaciones y proyectos
+              vinculados con la Educación Social, la integración, la formación y el trabajo
+              comunitario. Puedes contactarme por LinkedIn para compartir una oportunidad profesional,
+              plantear una colaboración o conversar sobre iniciativas sociales y educativas.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary linkedin-contact-button" href="https://www.linkedin.com/in/carlosarandabcn" target="_blank" rel="noreferrer">
+              <svg class="linkedin-icon" viewbox="0 0 24 24" aria-hidden="true">
+                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.1 20.45H3.54V9H7.1v11.45Z"></path>
+              </svg>
+              <span>Contactar por LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </section>
