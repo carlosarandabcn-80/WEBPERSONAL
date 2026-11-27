@@ -1,0 +1,49 @@
+name: Verificación puntual de Creaciones
+on:
+  push:
+    branches: [revision/comprobacion-creaciones]
+permissions: {}
+jobs:
+  conectividad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Comprobar web, recursos, proyectos y cabeceras públicas
+        shell: python
+        run: |
+          import urllib.request as net
+          from urllib.parse import urlparse
+          import json
+          from html.parser import HTMLParser
+          class Document(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.resources = set()
+              def handle_starttag(self, name, attrs):
+                  info = dict(attrs)
+                  for key in ('src', 'poster', 'href'):
+                      val = info.get(key, '')
+                      if val.startswith('assets/'):
+                          self.resources.add(val)
+          def read(url, method='GET'):
+              req = net.Request(url,method=method,headers={'User-Agent':'WEBPERSONAL-public-connectivity/1.0'})
+              with net.urlopen(req,timeout=18) as res:
+                  assert urlparse(res.url).scheme == 'https' and res.status == 200
+                  print('VERIFICADO',res.status,res.url,flush=True)
+                  return (res.read().decode('utf-8','replace') if method=='GET' else ''),res.headers
+          links = ["https://carlosaranda.pro/","https://carlosarandabcn-80.github.io/SOCIOMAP/","https://carlosarandabcn-80.github.io/COMPARADOR_PIRAMIDES-POBLACIONES/","https://carlosarandabcn-80.github.io/Sem-foro-de-riesgo-estructural-en-la-desigualdad-de-cuidados/"]
+          markers = ["id=\"creaciones\"","SOCIOMAP","Eurostat","Semaforo"]
+          for i, (url, marker) in enumerate(zip(links,markers)):
+              body, headers = read(url)
+              assert marker.lower() in body.lower(), url
+              if i == 0:
+                  print('CABECERAS',json.dumps({k:headers.get(k) for k in ('Strict-Transport-Security','Content-Security-Policy','X-Frame-Options','X-Content-Type-Options','Referrer-Policy','Permissions-Policy')}))
+                  print('CSP HTML', 'http-equiv="Content-Security-Policy"' in body)
+                  parsed = Document()
+                  parsed.feed(body)
+                  for resource in sorted(parsed.resources | {'assets/images/retrato-dual-480.webp'}):
+                      read(url+resource,'HEAD')
+          for url in ["https://github.com/carlosarandabcn-80/SOCIOMAP","https://github.com/carlosarandabcn-80/COMPARADOR_PIRAMIDES-POBLACIONES","https://github.com/carlosarandabcn-80/Sem-foro-de-riesgo-estructural-en-la-desigualdad-de-cuidados"]:
+              read(url,'HEAD')
+          body, _ = read('http://carlosaranda.pro/')
+          assert 'id="creaciones"' in body
